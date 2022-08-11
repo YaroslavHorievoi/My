@@ -2,7 +2,8 @@
   "name": "applicant-exercise",
   "version": "0.0.0",
   "engines": {
-    "node": "16.13.x"
+    "node": "16.13.1",
+    "npm": "8.1.2"
   },
   "scripts": {
     "ng": "ng",
