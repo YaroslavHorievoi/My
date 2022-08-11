@@ -3,7 +3,6 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 import { VideoGameInterface } from '../models/video-game.interface';
-import { environment } from '../../../environments/environment';
 
 @Injectable()
 export class VideoGameService {
@@ -12,6 +11,6 @@ export class VideoGameService {
     ) {}
 
     public getAllVideoGames(): Observable<VideoGameInterface[]> {
-        return this.httpClient.get<VideoGameInterface[]>(environment.url + '/applicant-test/');
+        return this.httpClient.get<VideoGameInterface[]>('https://public.connectnow.org.uk/applicant-test/');
     }
 }
