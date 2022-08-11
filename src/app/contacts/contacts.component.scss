@@ -1,0 +1,64 @@
+.contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 550px;
+    margin: 0 auto;
+
+    .header {
+        margin-bottom: 50px;
+        color: #c1d1e8;
+
+        h1 {
+            font-size: 28px;
+            text-transform: uppercase;
+            font-weight: 400;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        p {
+            margin: 0;
+        }
+    }
+
+    .form-container {
+        width: 100%;
+        background: #0e1a2b;
+
+        .header {
+            margin: 25px;
+            font-size: 18px;
+        }
+
+        form {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin: 25px;
+            gap: 30px 10px;
+
+            .field-control {
+                &.message {
+                    grid-column: 1 / 3;
+                    height: 100px;
+                }
+            }
+
+            .button {
+                width: 60px;
+                margin-left: auto;
+                grid-column: 2;
+            }
+        }
+    }
+}
+
+@media (max-width:1100px) {
+    .contact-wrapper {
+        width: 90%;
+
+        .form-container form {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

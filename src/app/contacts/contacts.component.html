@@ -1,0 +1,45 @@
+<div class="contact-wrapper">
+
+    <div class="header">
+        <h1>Get In Touch</h1>
+
+        <p>Trysail transom furl Sea Legs scallywag Jack Ketch chandler mizzenmast reef sails skysail. Shiver me timbers loot bucko belaying pin Sea Legs boom gunwalls booty jury mast fore.</p>
+    </div>
+
+    <div class="form-container">
+        <p class="header">Contact Form</p>
+
+        <form [formGroup]="contactForm">
+            <div class="field-control name">
+                <div class="field-description">
+                    <p>Name</p>
+                    <p class="required">*</p>
+                </div>
+                <input formControlName="name">
+            </div>
+
+            <div class="field-control email">
+                <div class="field-description">
+                    <p>Email Address</p>
+                    <p class="required">*</p>
+                </div>
+                <input formControlName="email">
+            </div>
+
+            <div class="field-control message">
+                <div class="field-description">
+                    <p>Message</p>
+                    <p class="required">*</p>
+                </div>
+                <textarea formControlName="message"></textarea>
+            </div>
+
+            <button [disabled]="contactForm.invalid"
+                    (click)="send()"
+                    class="button">
+                Send
+            </button>
+        </form>
+
+    </div>
+</div>
