@@ -64,3 +64,9 @@
         height: calc(100vh - 200px);
     }
 }
+
+@media (max-width:480px) {
+    .video-games {
+        height: 100vh;
+    }
+}

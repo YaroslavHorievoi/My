@@ -153,6 +153,10 @@
 }
 
 @media (max-width:480px) {
+    .video-game-wrapper {
+        gap: 10px;
+    }
+
     .video-game-wrapper .game-filters form {
         display: flex;
         flex-direction: column;
